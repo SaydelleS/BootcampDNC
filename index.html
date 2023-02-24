@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp DNC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        #menu{
+            width: 100%;
+            height: 100px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            background-color: #303030;
+            display: flex;
+            border: 1px solid #BABABA;
+            
+        }
+        #menuP a{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        #menuP a:hover{
+            color:gray;
+        }
+        #menuP{
+            display: flex;
+            justify-content: space-around;
+            width: 55%; 
+            align-items: center;
+        }
+        
+        #menuP button{
+            position: absolute;
+            width: 60px;
+            height: 25px;
+            left: 1500px;
+            top: 38px; 
+            background: #0C70F2;
+            box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+            color: #FFFFFF;
+            align-items: center;
+            cursor: pointer;
+        }
+        #titulo{
+            text-align: center;
+            margin: 200px 210px 230px 210px;
+            font-family: 'Inter';
+            color: #FFFFFF;
+        }
+        #titulo .invert{
+            background-color: black;
+            font-size: bold;
+            padding: 6px;
+        }
+        #titulo h1{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 97px;
+        }
+        #titulo h2{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+        }
+        #cadastro{
+            background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 20.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+            border: 1px solid #BABABA;
+        }
+        #dados{
+            font-family: 'Inter';
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+        }
+        #dados input{
+            font-size: 15px;
+            padding: 10px;
+        }
+        #dados label{
+            color: #FFFFFF;
+            width: 100px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 36px;
+        }
+        .digitar{
+            width: 400px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #dados button{
+            width: 410px;
+            border-radius: 10px;
+            height: 30px;
+            background: rgba(12, 112, 242, 0.9);
+            box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+            border-radius: 10px;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 30px;
+            color: white;
+            cursor: pointer;
+            margin-top: 60px;
+            margin-bottom: 200px;
+        }
+        #escolha{
+            color: #FFFFFF;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #rodape{
+            display: flex;
+            flex-direction:row;
+            width: 100%;
+            line-height: 40px;
+            justify-content: space-around;
+            font-family: 'Inter';
+            font-style: normal;
+            font-size: 20px;
+            background-color: #0C70F2;
+            
+            color: white;
+        }
+        #text-rodape{
+            align-items: center;
+            margin-top: 90px;
+            font-size: 14px;
+            font-weight: 100px;
+        }
+        #termos{
+            background-color: #0C70F2;
+            font-family: 'Inter';
+            text-align:center;
+            width: 100%;
+            height: 100px;
+            font-weight: 600px;
+            font-size: 25px;
+            color: white;
+            padding-top: 90px;
+        }
+        #rodape a:hover{
+            color:gray;
+        }
+        #termos a:hover{
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">   
+        <div id="menuP">
+            <a target="_blank">Home</a>
+            <a target="_blank">Últimas Edições</a>
+            <a target="_blank">Requisitos para Participar</a>
+            <button type="">Login</button>
+        </div>
+    </div>     
+    <div id="cadastro">
+        <div id="titulo">
+            <h1>BOOTCAMP DNC</h1>
+            <h2>Esse será um evento exclusivo para todos os alunos<br>
+                da DNC, que querem <span class="invert">acelerar carreira</span> com uma<br>
+                semana intensiva de conteúdo de mercado entre<br>
+                <span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span></h2>
+        </div>
+        <div id="dados">
+            <form>
+                <label>Nome:</label><br>
+                <input class="digitar" type="text" placeholder="insira seu nome aqui" name="nome" required><br>
+                <label>Sobrenome:</label><br>
+                <input class="digitar"  type="text" placeholder="insira seu sobrenome aqui" name="sobrenome" required><br>
+                <div id="escolha">
+                    <label>Área de Interesse:</label><br>
+                    <input type="checkbox" name="escolha" required>Front-End
+                    <input type="checkbox" name="escolha" required>Back-End
+                    <input type="checkbox" name="escolha" required>Banco de Dados<br>
+                </div>
+                <label>E-mail:</label><br>
+                <input class="digitar"  type="text" placeholder="insira seu E-mail aqui" name="email" required><br>
+                <label>Telefone:</label><br>
+                <input class="digitar"  type="number" placeholder="(99) 99999-9999" name="telefone" required><br>
+                <label>Insira uma Frase Criativa:</label><br>
+                <input class="digitar"  type="text" placeholder="Qual frase criativa você gostaria de falar:)" name="frase" required><br>
+                <button type="">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="rodape">
+        <div>
+            <h3>Escolas</h3><br>
+            <a>Formação em Tecnologia</a><br>
+            <a>Formação em Marketing</a><br>
+            <a>Formação em Dados</a><br>
+            <a>Formação em Projeto</a><br>
+            <a>Formação em Produto</a><br>
+        </div>
+        <div>
+            <h3>Sobre a DNC</h3><br>
+            <a>História</a><br>
+            <a>Missão e Valores</a><br>
+            <a>Trabalhe Conosco</a><br>
+            <a>Conteúdo Gratuito</a><br>
+        </div>
+        <div id="text-rodape">
+            <b>© 2022 DTC Treinamentos & Consultoria<br>
+            LTDA | CNPJ: 27.995.577/0001-37 | R.<br>
+             Justino Cobra, 61 – Vila Ema | São José dos<br>
+             Campos – SP | CEP 12243-030</b>
+        </div>
+    </div>
+    <div id="termos">
+        <a>Termos de Uso | Política de Privacidade</a>
+    </div>
+</body>
+</html>
